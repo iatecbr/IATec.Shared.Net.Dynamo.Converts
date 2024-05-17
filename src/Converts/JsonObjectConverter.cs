@@ -2,7 +2,7 @@ using System.Text.Json;
 using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
 
-namespace IATec.Shared.Net.Dynamo.Converts.Converts;
+namespace IATec.Shared.Net.Dynamo.Converts;
 
 public class JsonObjectConverter : IPropertyConverter
 {
