@@ -4,7 +4,7 @@ using Amazon.DynamoDBv2.DocumentModel;
 
 namespace IATec.Shared.Net.Dynamo.Converts.Converts;
 
-public class DictionaryValueConverter : IPropertyConverter
+public class DictionaryConverter : IPropertyConverter
 {
     public DynamoDBEntry ToEntry(object value)
     {
