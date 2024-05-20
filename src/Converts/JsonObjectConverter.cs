@@ -4,7 +4,7 @@ using Amazon.DynamoDBv2.DocumentModel;
 
 namespace IATec.Shared.Net.Dynamo.Converts;
 
-public class JsonObjectConverter : IPropertyConverter
+public class JsonObjectConverter<T> : IPropertyConverter
 {
     public DynamoDBEntry ToEntry(object value)
     {
@@ -12,15 +12,15 @@ public class JsonObjectConverter : IPropertyConverter
         return new Primitive { Value = json };
     }
 
-    public object FromEntry(DynamoDBEntry entry)
+    public object? FromEntry(DynamoDBEntry entry)
     {
         var json = entry.AsPrimitive().Value.ToString();
 
         if (json == null)
-            return new { };
+            return null;
 
         return
             JsonSerializer.Deserialize(json,
-                typeof(object)) ?? new { };
+                typeof(T)) ?? null;
     }
 }
