@@ -27,7 +27,7 @@ steps:
   - task: DotNetCoreCLI@2
     inputs:
       command: 'pack'
-      packagesToPack: '**/IATec.Shared.Behaviors.csproj' 
+      packagesToPack: '**/IATec.Shared.Net.Dynamo.Converts.csproj' 
       packDirectory: '$(Build.ArtifactStagingDirectory)'
       nobuild: true 
       versioningScheme: 'byEnvVar'
