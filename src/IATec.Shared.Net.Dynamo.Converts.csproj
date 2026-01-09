@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Library</OutputType>
-		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>IATec.Shared.Net.Dynamo.Converts</PackageId>
@@ -11,7 +11,7 @@
 		<Description>Project developed to help IATec teams to develop their projects faster.</Description>
 		<Copyright>@IATec Solutions</Copyright>
 		<RootNamespace>IATec.Shared.Net.Dynamo</RootNamespace>
-        <Version>1.0.2</Version>
+        <Version>1.1.0</Version>
         <PackageIconUrl>https://assets-services-dev.sdasystems.org/images/icons/standard.library.icon.png</PackageIconUrl>
         <PackageIcon>icon.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/iatecbr/IATec.Shared.Net.Dynamo.Converts</PackageProjectUrl>
@@ -26,8 +26,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.401"/>
-        <PackageReference Include="FluentResults" Version="3.16.0"/>
-        <PackageReference Include="FluentValidation" Version="11.10.0"/>
+        <PackageReference Include="AWSSDK.DynamoDBv2" Version="4.0.10.7" />
+        <PackageReference Include="FluentResults" Version="4.0.0" />
+        <PackageReference Include="FluentValidation" Version="12.1.1" />
     </ItemGroup>
 </Project>
